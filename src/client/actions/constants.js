@@ -1,4 +1,4 @@
-export const BASE_URL = 'http://localhost:27017';  {/*9002 ,27017*/}
+export const BASE_URL = 'http://localhost:27017';  {/* orignal :-9002 ,27017*/}
 export const SKILLS_ENDPOINT = '/api/skills';
 export const PROJECTS_ENDPOINT = '/api/projects';
 export const BLOGS_ENDPOINT = '/api/blogs';

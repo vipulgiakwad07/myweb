@@ -201,7 +201,7 @@ html, body {
   justify-content: center;
   align-items: center;
  color: #FFF;
- background-color: #3dCFD3;
+ background-color:white;
  ;
 } 
 .skill-round{
@@ -227,7 +227,7 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: white;
+  background: #333;
   box-shadow: 1px 1px #333;
   margin-top: 3em;
 }

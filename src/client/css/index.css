@@ -227,7 +227,7 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #333;
+  background: white;
   box-shadow: 1px 1px #333;
   margin-top: 3em;
 }

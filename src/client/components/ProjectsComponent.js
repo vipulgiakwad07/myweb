@@ -185,7 +185,7 @@ class ProjectsComponent extends React.Component {
 
                <tc> 
                  <tr> <div className={'project-round'}>Blogging App</div> </tr>
-                 <tr> <div className={'project-round'}> GitHub <a href="https://github.com/vipulgiakwad07/bloggingapp"> link</a> </div> </tr>
+                 <tr> <div className={'project-round'}> GitHub <a href="https://github.com/vipulgiakwad07/blogging"> link</a> </div> </tr>
                </tc>
  
                 

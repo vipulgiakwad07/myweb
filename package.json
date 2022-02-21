@@ -58,6 +58,10 @@
     "webpack-cli": "^3.3.11",
     "webpack-node-externals": "^1.7.2"
   },
+  "engines" : { 
+    "npm" : "8.3.2",
+    "node" : "16.14.0"
+  }
   "scripts": {
     "start": "npm-run-all --parallel webpack:*",
     "webpack:client": "webpack --config webpack.client.js --watch",

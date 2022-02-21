@@ -201,7 +201,7 @@ html, body {
   justify-content: center;
   align-items: center;
  color: #FFF;
- background-color:white;
+ background-color: white;
  ;
 } 
 .skill-round{
@@ -323,6 +323,47 @@ html, body {
 /*************************************************************************/
 
 /*************************Projects Styles********************************/
+/*
+  .Card{
+  background-color: #CCC;
+  margin-top: 1rem;
+ padding: 1rem;
+
+}
+  */
+
+.cardp:hover{
+  transform: scale(1.05)
+  
+}
+.cardb:hover{
+  transform: scale(1.05)
+}
+.carde:hover{
+  transform: scale(1.05)
+}
+.cardpho:hover{
+  transform: scale(1.05)
+}
+
+.Myproject{
+
+  /*align-items: center;
+  display: flex;
+  margin: 3rem;
+  padding: 1rem;
+  margin-bottom: 1rem;*/
+  background-color: #d8d0d0;
+  padding-right: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+  padding-left: 2rem;
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 60px;
+}
+
 .project-round{
   margin-left: 1rem;
   background-color:white;
@@ -340,8 +381,12 @@ html, body {
 }
 
 .projects-parent-container {
+
+  content: counter( );
+  margin-right: 1rem;
+  margin-left: 0;
   width: 100vw;
-  height: auto;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -349,7 +394,7 @@ html, body {
   background: white;
 }
 .project-child-container {
-  width: 80em;
+ /* width: 80em;*/
   height: auto;
 }
 .projects-tab-container {
@@ -498,7 +543,14 @@ html, body {
 }
 /*************************************************************************/
 
-/***************************Blogs Styles*************************/
+/***************************About Me Styles*************************/
+.aboutme-grid{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+}
+
 .blogs-parent-container {
   width: 100vw;
   height: auto;
@@ -510,10 +562,11 @@ html, body {
 }
 .blogs-parent-contents-container {
   width: 80vw;
-  height: 20em;
+  height: auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  padding-left: 1rem;
+ /* align-items: center;*/
 }
 .blogs-contents-container {
   width: 80vw;
@@ -563,7 +616,7 @@ html, body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: white;
+  background: rgb(248, 248, 248);
 }
 .contacts-contents-container {
   width: 100vw;
@@ -681,157 +734,9 @@ html, body {
 .project-hide-hyperlink {
   display: none;
 }
-.github-hyperlink {
-  display: block;
-  text-decoration: none;
-}
-.github-hide-hyperlink {
-  display: none;
-}
-.close-site-div {
-  width: 8em;
-  height: 2.5em;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-top: 1em;
-  margin-right: 1em;
-  border: 0.5px solid rgb(236, 118, 118);
-  background: rgb(236, 118, 118);
-}
-.close-site-div:hover {
-  width: 8em;
-  height: 2.5em;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  cursor: pointer;
-  margin-top: 1em;
-  margin-right: 1em;
-  border: 0.5px solid rgb(238, 83, 83);
-  background: rgb(238, 83, 83);
-}
-.close-site-icon {
-  width: 1.2em;
-  height: 1.2em;
-  margin-left: 1em;
-}
-.close-site-text {
-  font-size: 0.8rem;
-  font-weight: bold;
-  color: #FFF;
-  margin-left: 1em;
-}
-.github-site-div {
-  width: 8em;
-  height: 2.5em;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-top: 1em;
-  margin-right: 1em;
-  border: 0.5px solid #000;
-  background: #000;
-}
-.github-site-div:hover {
-  width: 8em;
-  height: 2.5em;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  cursor: pointer;
-  margin-top: 1em;
-  margin-right: 1em;
-  border: 0.5px solid #333;
-  background: #333;
-}
-.github-site-icon {
-  width: 1.2em;
-  height: 1.2em;
-  margin-left: 1em;
-}
-.github-site-text {
-  font-size: 0.8rem;
-  font-weight: bold;
-  color: #FFF;
-  margin-left: 1em;
-}
-.visit-site-div {
-  width: 8em;
-  height: 2.5em;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-top: 1em;
-  border: 0.5px solid #4c8bf5;
-  background: #4c8bf5;
-}
-.visit-site-div:hover {
-  width: 8em;
-  height: 2.5em;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-top: 1em;
-  cursor: pointer;
-  border: 0.5px solid #003a9e;
-  background: #003a9e;
-}
-.visit-site-icon {
-  width: 1.2em;
-  height: 1.2em;
-  margin-left: 1em;
-}
-.visit-site-text {
-  font-size: 0.8rem;
-  font-weight: bold;
-  color: #FFF;
-  margin-left: 0.8em;
-}
-.youtube-site-div {
-  width: 10em;
-  height: 2.5em;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-top: 1em;
-  border: 0.5px solid #c4302b;
-  background: #c4302b;
-}
-.youtube-site-div:hover {
-  width: 10em;
-  height: 2.5em;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-top: 1em;
-  cursor: pointer;
-  border: 0.5px solid #e24944;
-  background: #e24944;
-}
-.youtube-site-icon {
-  width: 1.2em;
-  height: 1.2em;
-  margin-left: 1em;
-}
-.youtube-site-text {
-  font-size: 0.8rem;
-  font-weight: bold;
-  color: #FFF;
-  margin-left: 0.8em;
-}
-.play-store-div {
-  width: 10em;
-  height: 2.5em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 1em;
-}
-.play-store-icon {
-  width: auto;
-  height: 4em;
-}
+
+
+
 .skills-mobile-gap {
   display: none;
 }
@@ -902,7 +807,7 @@ html, body {
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    border-top: 2px solid #c4302b;
+    border-top: 2px solid #3dCFD3;
   }
   .bottom-menu-item-txt {
     font-size: 1rem;
@@ -910,7 +815,7 @@ html, body {
   }
   .bottom-menu-selected-item-txt {
     font-size: 1rem;
-    color: #e76864;
+    color: #3dCFD3;
   }
   .dashboard-header-container {
     width: 100%;
@@ -996,7 +901,7 @@ html, body {
   .dashboard-profile-name {
     font-weight: 700;
     font-size: 1.5rem;
-    color: #EA0047;
+    color: #3dCFD3;
     position: relative;
     animation: profile-name-animation;
     animation-duration: 2s;
@@ -1116,6 +1021,24 @@ html, body {
   .skills-item-container-hide {
     display: none;
   }
+  .Myproject{
+    display: block;
+   
+  }
+   
+  .MuiPaper-root{
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+     
+  }
+
+  .aboutme-grid{
+    margin-top: 2.2rem;
+    display: table-column;
+    background-color: white;
+    
+  }
+
   .projects-parent-container {
     width: 100%;
     height: 100%;
@@ -1299,157 +1222,9 @@ html, body {
   .project-hide-hyperlink {
     display: none;
   }
-  .github-hyperlink {
-    display: block;
-    text-decoration: none;
-  }
-  .github-hide-hyperlink {
-    display: none;
-  }
-  .close-site-div {
-    width: 6em;
-    height: 1.8em;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-top: 1em;
-    margin-right: 1em;
-    border: 0.5px solid rgb(236, 118, 118);
-    background: rgb(236, 118, 118);
-  }
-  .close-site-div:hover {
-    width: 6em;
-    height: 1.8em;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    cursor: pointer;
-    margin-top: 1em;
-    margin-right: 1em;
-    border: 0.5px solid rgb(238, 83, 83);
-    background: rgb(238, 83, 83);
-  }
-  .close-site-icon {
-    width: 1em;
-    height: 1em;
-    margin-left: 1em;
-  }
-  .close-site-text {
-    font-size: 0.7rem;
-    font-weight: bold;
-    color: #FFF;
-    margin-left: 0.6em;
-  }
-  .github-site-div {
-    width: 6em;
-    height: 1.8em;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-top: 1em;
-    margin-right: 1em;
-    border: 0.5px solid #000;
-    background: #000;
-  }
-  .github-site-div:hover {
-    width: 6em;
-    height: 1.8em;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    cursor: pointer;
-    margin-top: 1em;
-    margin-right: 1em;
-    border: 0.5px solid #333;
-    background: #333;
-  }
-  .github-site-icon {
-    width: 1em;
-    height: 1em;
-    margin-left: 0.8em;
-  }
-  .github-site-text {
-    font-size: 0.7rem;
-    font-weight: bold;
-    color: #FFF;
-    margin-left: 0.6em;
-  }
-  .visit-site-div {
-    width: 6em;
-    height: 1.8em;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-top: 1em;
-    border: 0.5px solid #4c8bf5;
-    background: #4c8bf5;
-  }
-  .visit-site-div:hover {
-    width: 6em;
-    height: 1.8em;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-top: 1em;
-    cursor: pointer;
-    border: 0.5px solid #003a9e;
-    background: #003a9e;
-  }
-  .visit-site-icon {
-    width: 1em;
-    height: 1em;
-    margin-left: 0.8em;
-  }
-  .visit-site-text {
-    font-size: 0.7rem;
-    font-weight: bold;
-    color: #FFF;
-    margin-left: 0.6em;
-  }
-  .youtube-site-div {
-    width: 8em;
-    height: 1.8em;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-top: 1em;
-    border: 0.5px solid #c4302b;
-    background: #c4302b;
-  }
-  .youtube-site-div:hover {
-    width: 8em;
-    height: 1.8em;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-top: 1em;
-    cursor: pointer;
-    border: 0.5px solid #e24944;
-    background: #e24944;
-  }
-  .youtube-site-icon {
-    width: 1em;
-    height: 1em;
-    margin-left: 0.8em;
-  }
-  .youtube-site-text {
-    font-size: 0.7rem;
-    font-weight: bold;
-    color: #FFF;
-    margin-left: 0.6em;
-  }
-  .play-store-div {
-    width: 8em;
-    height: 2.5em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 1em;
-  }
-  .play-store-icon {
-    width: auto;
-    height: 3em;
-  }
+  
+  
+  
   .blogs-parent-container {
     width: 100vw;
     height: auto;
@@ -1457,8 +1232,11 @@ html, body {
     flex-direction: column;
     align-items: center;
     padding-bottom: 2em;
+    padding-top: 2em;
+
     background: #4c8bf5;
   }
+
   .blogs-parent-contents-container {
     width: 100%;
     height: auto;
@@ -1467,8 +1245,9 @@ html, body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #4c8bf5;
+    background:white;
   }
+
   .blogs-contents-container {
     width: 95vw;
     height: auto;
@@ -1477,38 +1256,10 @@ html, body {
     justify-content: center;
     align-items: center;
   }
-  .blogs-text {
-    font-size: 0.8rem;
-    color: #FFF;
-    text-align: center;
-    margin-top: 7em;
-  }
-  .blogs-poster-container {
-    width: 100%;
-    height: auto;
-    padding: 0em;
-    margin-top: 1em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .blogs-poster-img {
-    width: 100%;
-    height: auto;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
-  .blogs-details-link {
-    font-size: 0.8rem;
-    color: #ffffff;
-    line-height: 1.7em;
-    text-decoration: underline;
-  }
-  .blogs-details-link:hover {
-    font-size: 0.8rem;
-    color: #c7f109;
-    line-height: 1.7em;
-    text-decoration: underline;
-  }
+  
+  
+  
+  
 }
 
 /***************Animation Keyframes**************/

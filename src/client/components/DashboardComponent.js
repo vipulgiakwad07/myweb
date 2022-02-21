@@ -14,7 +14,7 @@ class DashboardComponent extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            tabItem: ['HOME', 'SKILLS', 'PROJECTS', 'BLOGS'],
+            tabItem: ['HOME', 'SKILLS', 'PROJECTS', 'ABOUT ME','CONTACTS'],
             selectedItem: 'HOME'
         }
     }
@@ -46,7 +46,7 @@ class DashboardComponent extends React.Component {
                 <ProjectsComponent />
             )
         }
-        if (tabItem === 'BLOGS') {
+        if (tabItem === 'ABOUT ME') {
             return (
                 <BlogsComponent />
             )
@@ -60,7 +60,8 @@ class DashboardComponent extends React.Component {
                     <div className={'mobile-header-container'}>
                         <img src={logo} className={'mobile-logo'} />
                     </div>
-                    <div className={'mobile-body-container'}>
+                   <div className={'mobile-body-container'}> 
+                        <div className={'blogs-parent-contents-container'}></div>
                         {this.renderTabContents()}
                     </div>
                     <div className={'mobile-footer-container'}>
@@ -84,7 +85,7 @@ class DashboardComponent extends React.Component {
                             <a href="#" className={'menu-item-txt'}><span>HOME</span></a>
                             <a href="#skills" className={'menu-item-txt'}><span>SKILLS</span></a>
                             <a href="#projects" className={'menu-item-txt'}><span>PROJECTS</span></a>
-                            {/*<a href="#blogs" className={'menu-item-txt'}><span>BLOGS</span></a>*/}
+                            <a href="#blogs" className={'menu-item-txt'}><span>ABOUT ME</span></a>
                             <a href="#contacts" className={'menu-item-txt'}><span>CONTACTS</span></a>
 
                         </div>
@@ -103,11 +104,13 @@ class DashboardComponent extends React.Component {
                         <div className={'skills-container'}>
                             <span className={'dashboard-skills-label'}>Projects</span>
                         </div>
+                        <span><p>Note:USE USER NAME(ID) AS : user & PASSWORD :123456 </p></span>
                         <ProjectsComponent />
+                        
                     </div>
                     <div id={'blogs'} className={'blogs-parent-container'}>
                         <div className={'skills-container'}>
-                            <span className={'dashboard-skills-label'}>Blogs</span>
+                            <span className={'dashboard-skills-label'}>ABOUT ME</span>
                         </div>
                         <BlogsComponent />
                     </div>

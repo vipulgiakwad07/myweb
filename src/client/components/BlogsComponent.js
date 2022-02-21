@@ -18,24 +18,37 @@ class BlogsComponent extends React.Component {
     }
 
     render() {
-        var results = JSON.parse(JSON.stringify(this.props.blogs)).data;
-
+       
         return (
             <div className={'blogs-parent-contents-container'}>
-                <p className={'blogs-text'}>
-                    Here are some of my popular blogs 
-                    follow my blogs
-                </p>
-                <div className={'blogs-contents-container'}>
-                    {results.length > 0 ? results.map(item =>
-                        <div key={item} className={'blogs-poster-container'}>
-                            <a href={item.blog_link} className={'blogs-details-link'} 
-                            target="_blank"><img src={item.thumbnail} className={'blogs-poster-img'} /></a>
-                        </div>
-                    ) : null}
+                <div className='aboutme-grid'>
+                
+                <div>
+                <ul>
+                      <h4>Positives</h4>
+                      <li><p>Patience</p></li>
+                      <li><p>Good Communication skill </p></li>
+                      </ul>
                 </div>
-                <div className={'projects-mobile-items-gap'}></div>
-            </div>
+                <div>
+                <ul>
+                      <h4>Negatives</h4>
+                      <li><p>Emotional</p></li>
+                      <li><p>Bad Handwriting </p></li>
+                      </ul>
+                </div>
+                <div>
+                <ul>
+                      <h4>Hobbies</h4>
+                      <li><p>Playing Chess</p></li>
+                      <li><p>Watching Cricket</p></li>
+                      </ul>
+                </div>
+
+                  
+                </div>
+               
+             </div>
         );
     }
 }

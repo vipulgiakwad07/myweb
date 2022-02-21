@@ -11,6 +11,15 @@ import githubIcon from '../images/ic_github_white.png';
 import webIcon from '../images/ic_web_site.png';
 import playstore from '../images/ic_google_playstore.png';
 
+import Card  from './MediaCard';
+
+
+
+
+// or less ideally
+//import { Card,Button  } from 'react-bootstrap/Button';
+//import { CardImg,CardText,CardBody,CardTitle,CardButton} from 'reactstrap';
+
 const modalStyles = {
     overlay: {
         zIndex: 2000,
@@ -171,7 +180,7 @@ class ProjectsComponent extends React.Component {
 
         return (
             <div >
-            <table>
+            {/*<table>
                 
                <tc>
                  <tr><div className={'project-round'}>Pizza Ordering App </div></tr>
@@ -185,7 +194,7 @@ class ProjectsComponent extends React.Component {
 
                <tc> 
                  <tr> <div className={'project-round'}>Blogging App</div> </tr>
-                 <tr> <div className={'project-round'}> GitHub <a href="https://github.com/vipulgiakwad07/blogging"> link</a> </div> </tr>
+                 <tr> <div className={'project-round'}> GitHub <a href="https://github.com/vipulgiakwad07/bloggingapp"> link</a> </div> </tr>
                </tc>
  
                 
@@ -197,9 +206,21 @@ class ProjectsComponent extends React.Component {
                </tc>
              
                 
-                </table>
+                </table> */}
+
+        {/*   <Card style={{ width: '18rem' }}>
+            <Card.Img variant="top" src="holder.js/100px180" />
+            <Card.Body>
+              <Card.Title>Card Title</Card.Title>
+              <Card.Text>
+                Some quick example text to build on the card title and make up the bulk of
+                the card's content.
+              </Card.Text>
+              <Button variant="primary">Go somewhere</Button>
+            </Card.Body>
+        </Card> */}
+                <Card />
                 
-               
             </div>
         );
     }

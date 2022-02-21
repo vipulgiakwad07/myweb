@@ -5,6 +5,7 @@ import routes from "./routes";
 import store from './store';
 import { Provider } from 'react-redux'
 
+
 class App extends React.Component {
   render() {
     return (

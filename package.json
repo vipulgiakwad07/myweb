@@ -61,7 +61,7 @@
   "engines" : { 
     "npm" : "8.3.2",
     "node" : "16.14.0"
-  }
+  },
   "scripts": {
     "start": "npm-run-all --parallel webpack:*",
     "webpack:client": "webpack --config webpack.client.js --watch",
